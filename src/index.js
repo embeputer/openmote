@@ -229,7 +229,7 @@ async function main() {
   const buildCmd = (base) => {
     if (!args.caffeinate) return base;
     const isMac = process.platform === "darwin";
-    if (isMac) return ["caffeinate", "-i", "-s", ...base];
+    if (isMac) return ["caffeinate", "-dims", ...base];
     return ["systemd-inhibit", "--what=idle", "--mode=block", base[0], ...base.slice(1)];
   };
 
