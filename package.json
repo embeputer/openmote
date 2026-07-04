@@ -1,0 +1,12 @@
+{
+  "name": "openmote",
+  "version": "1.0.0",
+  "description": "Remote control opencode via web with QR codes and tunneling.",
+  "type": "module",
+  "bin": {
+    "openmote": "./bin/openmote"
+  },
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0"
+  }
+}
